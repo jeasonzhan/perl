@@ -30,16 +30,3 @@ foreach (sort keys %hash_file1)
                 print "$_ => 不存在\n";
         }
 }
-
-# 对比
-print "二楼给的表中，不存在的\n";
-foreach (sort keys %hash_file2)
-{
-        if (exists $hash_file1{$_})
-        {
-        }
-        else
-        {
-                print "$_ => 不存在\n";
-        }
-}
